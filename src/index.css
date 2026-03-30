@@ -1,21 +1,195 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/600.css";
 
 * {
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
+.slide-app {
+  min-height: 100vh;
+  padding: 2rem;
+  transition: background 250ms ease, color 250ms ease;
+}
+
+.theme-dark {
+  background: radial-gradient(circle at top right, #1f0d57 0%, #070314 45%, #04010c 100%);
+  color: #efe9ff;
+}
+
+.theme-light {
+  background: radial-gradient(circle at top right, #f7f2ea 0%, #f5ead6 35%, #fffdf8 100%);
+  color: #3a2c1a;
+}
+
+.deck-header {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.deck-progress {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.deck-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.theme-dark button {
+  background: #3b1d87;
+  color: #f6f0ff;
+  border-color: #5e37d4;
+}
+
+.theme-light button {
+  background: #fff2dc;
+  color: #4e3512;
+  border-color: #e9d1a8;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.slide-stage {
+  max-width: 1120px;
+  margin: 1rem auto 0;
+}
+
+.slide-card {
+  min-height: 72vh;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.2);
+}
+
+.theme-dark .slide-card {
+  background: rgba(17, 10, 35, 0.92);
+  border: 1px solid #4d2ab5;
+}
+
+.theme-light .slide-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #ead9ba;
+}
+
+.slide-card h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 0.5rem;
+}
+
+.slide-card h2 {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.8vw, 1.5rem);
+  opacity: 0.9;
+}
+
+.lead {
+  margin-top: 1.2rem;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  max-width: 72ch;
+  line-height: 1.7;
+}
+
+.slide-card ul {
+  margin: 1.25rem 0 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.slide-card li {
+  line-height: 1.6;
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #8e6df5;
+}
+
+.project-grid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.project-grid article {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.theme-dark .project-grid article {
+  border: 1px solid #4f30b6;
+  background: #140a30;
+}
+
+.theme-light .project-grid article {
+  border: 1px solid #efdcbc;
+  background: #fff9ee;
+}
+
+.project-grid h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.project-grid p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.project-grid .tech {
+  margin-top: 0.6rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.dot-nav {
+  max-width: 1120px;
+  margin: 1rem auto 0;
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.dot-nav button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 999px;
+  opacity: 0.45;
+}
+
+.dot-nav button.active {
+  opacity: 1;
+}
