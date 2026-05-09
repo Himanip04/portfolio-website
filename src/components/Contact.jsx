@@ -1,39 +1,60 @@
 export default function Contact({ dark }) {
-  const data = [
-    { label: "Email", value: "himanipant333@gmail.com" },
-    { label: "Phone", value: "+91-9193538464" },
-    { label: "Location", value: "Dehradun, India" },
-  ];
-
   return (
-    <section className="mt-10" id="contact">
-      <h3 className={`text-xl font-bold ${dark ? "text-white" : "text-[#6e4f2a]"}`}>
-        Contact
-      </h3>
+    <section className="mt-12">
+      <h3 className="text-xl font-bold text-white">Contact</h3>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-        {data.map((c) => (
-          <div
-            key={c.label}
-            className={`p-5 rounded-xl ${
-              dark ? "bg-[#14012b] border-[#3c1cff]" : "bg-[#fff7ec]"
-            }`}
-          >
-            <p className={`${dark ? "text-[#b599ff]" : "text-[#a67845]"} text-xs`}>
-              {c.label}
+      <div className="mt-6">
+        <div className="bg-[#0f0a25] border border-[#3c1cff] rounded-xl p-6 transition-all duration-300 hover:shadow-[0_0_20px_#3c1cff]">
+
+          <p className="text-gray-300 mb-4">
+            Feel free to reach out for opportunities, collaboration, or just a quick chat 👋
+          </p>
+
+          <div className="space-y-3 text-sm">
+
+            <p>
+              📧{" "}
+              <a
+                href="mailto:himanipant333@gmail.com"
+                className="text-[#a78bfa] hover:underline"
+              >
+              himaniPant333@gmail.com
+              </a>
             </p>
-            <p className="font-medium mt-1 break-words">{c.value}</p>
-          </div>
-        ))}
-      </div>
 
-      <p
-        className={`mt-8 text-center text-sm ${
-          dark ? "text-[#b9aaff]" : "text-[#9c8468]"
-        }`}
-      >
-        © {new Date().getFullYear()} Himani Pant — All Rights Reserved
-      </p>
+            <p>
+              💻{" "}
+              <a
+                href="https://github.com/Himanip04"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#a78bfa] hover:underline"
+              >
+                GitHub Profile
+              </a>
+            </p>
+
+            <p>
+              🔗{" "}
+              <a
+                href="https://www.linkedin.com/in/himani-pant-982a67223/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-[#a78bfa] hover:underline"
+              >
+                LinkedIn Profile
+              </a>
+            </p>
+
+          </div>
+
+          {/* CTA BUTTON */}
+          <button className="mt-5 w-full bg-[#7c5cff] py-2 rounded-lg text-white hover:opacity-90">
+            Let's Connect →
+          </button>
+
+        </div>
+      </div>
     </section>
   );
 }

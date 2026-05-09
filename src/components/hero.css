@@ -1,0 +1,108 @@
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: radial-gradient(circle, #0f0c29, #000);
+  color: white;
+  min-height: 100vh;
+}
+
+/* LEFT */
+.hero-left {
+  width: 50%;
+}
+
+.badge {
+  background: #1a1a2e;
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.hero-left h1 {
+  font-size: 50px;
+}
+
+.hero-left span {
+  color: #7c5cff;
+}
+
+.subtitle {
+  margin: 20px 0;
+  color: #aaa;
+}
+
+.tech-line span {
+  color: #7c5cff;
+  font-weight: bold;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.primary {
+  background: #7c5cff;
+  color: white;
+}
+
+.secondary {
+  border: 1px solid #7c5cff;
+  color: white;
+}
+
+/* RIGHT CARD */
+.hero-right {
+  width: 40%;
+}
+
+.profile-card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(124,92,255,0.5);
+  text-align: center;
+}
+
+.profile-card img {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.status {
+  margin: 10px 0;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: green;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.card-section {
+  background: rgba(255,255,255,0.05);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hire-btn {
+  margin-top: 15px;
+  padding: 10px;
+  background: #7c5cff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
