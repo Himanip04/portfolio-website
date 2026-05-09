@@ -74,7 +74,7 @@ const projects = [
       "Submission system",
       "Server-side pagination"
     ],
-    tech: "React · TanStack · Tailwind · Node.js",
+    tech: "React · TanStack · Tailwind · Spring Boot",
     github: "https://github.com/Himanip04/dynamic-form-app.git",
     backend: "https://github.com/Himanip04/javaBackend.git"
   }

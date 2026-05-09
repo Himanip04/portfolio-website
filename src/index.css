@@ -19,9 +19,14 @@ code {
   font-family: "Inter", sans-serif;
 }
 
-/* Account for fixed navbar */
-#home,
-section:first-of-type {
-  /* padding-top: 80px; */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://www.transparenttextures.com/patterns/noise.png');
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
 }
-
