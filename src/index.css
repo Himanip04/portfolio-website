@@ -19,3 +19,9 @@ code {
   font-family: "Inter", sans-serif;
 }
 
+/* Account for fixed navbar */
+#home,
+section:first-of-type {
+  /* padding-top: 80px; */
+}
+
