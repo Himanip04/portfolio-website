@@ -155,11 +155,11 @@ const HeroSection = () => {
                 </p>
 
                 <p className="text-slate-300 ml-16">
-                  {'<div className=\"container\">'}
+                  {'<div className="container">'}
                 </p>
 
                 <p className="text-blue-300 ml-24">
-                  {'<h1 className=\"hero\">'}
+                  {'<h1 className="hero">'}
                 </p>
 
                 <p className="text-white ml-32">
