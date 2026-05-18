@@ -8,7 +8,7 @@ import FloatingSocialBar from './components/FloatingSocialBar';
 import TechMarquee from './components/TechMarquee';
 export default function PortfolioNeonDark() {
   return (
-    <div className="bg-[#030014] text-white min-h-screen overflow-x-hidden">
+    <div className="bg-[#030014] text-white min-h-screen">
 
       {/* <Navbar /> */}
       <section id="home">
