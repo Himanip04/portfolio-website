@@ -78,7 +78,7 @@ const projects = [
   tech: "Next.js · JavaScript · CSS · JSON · Git · Netlify",
   live: "https://catalogt.netlify.app/",
   github: "https://github.com/Himanip04/catalog-app"
-}
+},
   {
     title: "Dynamic Form Builder & Submissions System",
     desc:
