@@ -63,7 +63,22 @@ const projects = [
     live: "https://job-potall.netlify.app/",
     github: "https://github.com/Himanip04/job-portal-repo"
   },
-
+{
+  title: "Dynamic Multi-Category Catalog",
+  desc:
+    "Developed a responsive product catalog application with dynamic category-wise rendering and product detail pages using JSON data.",
+  features: [
+    "Category-wise product listing",
+    "Dynamic product detail pages",
+    "Search functionality",
+    "Responsive design for mobile & desktop",
+    "Dynamic rendering using itemprops array",
+    "Static site deployment with Netlify"
+  ],
+  tech: "Next.js · JavaScript · CSS · JSON · Git · Netlify",
+  live: "https://catalogt.netlify.app/",
+  github: "https://github.com/Himanip04/catalog-app"
+}
   {
     title: "Dynamic Form Builder & Submissions System",
     desc:
